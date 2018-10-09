@@ -32,15 +32,26 @@ class CatechismAnswers extends Component {
     });
     return (
       <div>
-        <Grid container spacing = {16}>
+        <Grid container spacing = {24}>
           <Grid item xs={12}>
-            <h2>Westminster Shorter Catechism</h2>
+            <h2>&nbsp;&nbsp;Westminster Shorter Catechism</h2>
             <h4>Search: <Input  placeholder="keyword/phrase" onChange={this.handleChange.bind(this)}></Input></h4>
             <ul>
-              {//this.state.catechism_answers.map(catechism_answer => 
+              { // this.state.catechism_answers.map(catechism_answer => // would be used only if i wanted to see everything with no filters. but our current
+                // filter handler includes every input
                 filteredAnswers.map(catechism_answer => 
-                <Paper key={catechism_answer.id}><h4>{catechism_answer.id+1}: {catechism_answer.question}</h4>{catechism_answer.answer}
-                </Paper>
+                  <p>
+                      <Paper key={catechism_answer.id}>
+                      <br/>
+                      <h4>
+                        {catechism_answer.id+1}: {catechism_answer.question}
+                      </h4>
+                      {catechism_answer.answer}
+                      <br/><br/><br/>
+                    </Paper>
+                  </p>
+                
+
               )}
             </ul>
           </Grid>

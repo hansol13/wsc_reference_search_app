@@ -10,12 +10,14 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Westminster Catechisms</h1>
         </header>
-        <CatechismAnswers />
+        <section className="main-body">
+          <CatechismAnswers />
+          <Typography variant="caption" gutterBottom>
+            <i>Referenced from <a href="http://www.shortercatechism.com/">shortercatechism.com</a></i> | 
+              Application built by <a href="http://mhansolbaek.com">Michael Baek</a>
+          </Typography>
+        </section>
         
-        <Typography variant="caption" gutterBottom>
-        <i>Referenced from <a href="http://www.shortercatechism.com/">shortercatechism.com</a></i> | 
-          Application built by <a href="http://mhansolbaek.com">Michael Baek</a>
-      </Typography>
         
       </div>
     );
