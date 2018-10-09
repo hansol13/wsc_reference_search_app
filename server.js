@@ -333,4 +333,5 @@ app.get('/api/catechism_answers', (req, res) => {
 
 const port = 5000;
 
-app.listen(port, () => `Server running on port ${port}`);
+//app.listen(port, () => `Server running on port ${port}`);
+app.listen(process.env.PORT || 5000);
