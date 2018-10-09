@@ -1,4 +1,5 @@
 const express = require('express');
+const router = express.Router();
 const app = express();
 const path = require('path');
 
@@ -332,7 +333,7 @@ app.get('/api/catechism_answers', (req, res) => {
 });
 
 // use routes
-app.use('/api/catechism_answers', catechism_answers);
+app.use('/api/catechism_answers', router);
 
 // serve static assets if in production
 if(process.env.NODE_ENV === 'production') {
