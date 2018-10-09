@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Input from '@material-ui/core/Input';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 
@@ -34,11 +33,9 @@ class CatechismAnswers extends Component {
     return (
       <div>
         <Grid container spacing = {16}>
-          
           <Grid item xs={12}>
             <h2>Westminster Shorter Catechism</h2>
             <h4>Search: <Input  placeholder="keyword/phrase" onChange={this.handleChange.bind(this)}></Input></h4>
-            
             <ul>
               {//this.state.catechism_answers.map(catechism_answer => 
                 filteredAnswers.map(catechism_answer => 
@@ -47,8 +44,6 @@ class CatechismAnswers extends Component {
               )}
             </ul>
           </Grid>
-
-          
         </Grid>
       </div>
     );
