@@ -1,0 +1,2 @@
+output to log file:
+node <script.js> > <log-file.txt>
