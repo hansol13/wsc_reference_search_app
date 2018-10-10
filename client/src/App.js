@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CatechismAnswers from './components/catechismAnswers';
 import Typography from '@material-ui/core/Typography';
+import NavMenu from './components/NavMenu';
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Westminster Catechisms</h1>
+          <NavMenu />
         </header>
         <section className="main-body">
           <CatechismAnswers />
