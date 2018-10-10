@@ -1,12 +1,12 @@
-# React Express Starter Pack
+# Westminster Shorter Catechism Reference and Search App
 
-> Create full stack apps with React and Express. Run your client and server with a single command. 
+> this is a react app using Brad Traversy's React Express starter pack
+> https://github.com/bradtraversy/react_express_starter
 
-### Redux Version
-This version does not include Redux
-[Click Here For Redux Version](https://github.com/bradtraversy/react_redux_express_starter) 
 
 ## Quick Start
+
+application is live on http://w-catechisms.herokuapp.com
 
 ``` bash
 # Install dependencies for server
@@ -31,8 +31,8 @@ npm run client
 
 ### Author
 
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
+Michael Baek
+[Sol Applications](http://www.mhansolbaek.com)
 
 ### Version
 
